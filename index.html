@@ -3,30 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"><style>
+  .topbar { background: #fff; border-bottom: 1px solid #ddd; }
+  .topbar .navbar-brand { font-weight: 800; font-size: 1.5rem; color: #1f8a5b; }
+
+  .subjectbar { background: #282a35; }
+  .subjectbar .links {
+    display: flex;
+    overflow-x: auto;          /* sideways scroll when links don't fit */
+    white-space: nowrap;
+    scrollbar-width: none;     /* hide scrollbar */
+  }
+  .subjectbar .links::-webkit-scrollbar { display: none; }
+  .subjectbar a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  .subjectbar a:hover { background: #000; color: #fff; }
+  .subjectbar a.active { background: #1f8a5b; color: #fff; }
+</style>
+
 </head>
  <body>
     <h1>My websiteee </h1>
 
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Navbar</span>
-        </div>
-      </nav>
-      
+<!-- Top bar -->
+<nav class="navbar navbar-expand-md topbar sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">MySite</a>
 
-    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tutorials</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="html.html">HTML</a></li>
+            <li><a class="dropdown-item" href="css.html">CSS</a></li>
+            <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Exercises</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="quiz.html">Quizzes</a></li>
+            <li><a class="dropdown-item" href="practice.html">Practice</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control form-control-sm me-2" type="search" placeholder="Search...">
+        <button class="btn btn-sm btn-success" type="submit">Go</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-
-
-
-
-
-
+<!-- Subject bar -->
+<div class="subjectbar">
+  <div class="links">
+    <a href="html.html" class="active">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="javascript.html">JavaScript</a>
+    <a href="sql.html">SQL</a>
+    <a href="python.html">Python</a>
+    <a href="java.html">Java</a>
+    <a href="php.html">PHP</a>
+    <a href="bootstrap.html">Bootstrap</a>
+    <a href="react.html">React</a>
+    <a href="git.html">Git</a>
+    <a href="c.html">C</a>
+    <a href="cpp.html">C++</a>
+    <a href="node.html">Node.js</a>
+  </div>
+</div>
 
 
 
