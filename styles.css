@@ -2,3 +2,6 @@ body{
     background-color: rgb(219, 207, 207);
 margin: auto;
 }
+
+.links a { display: block; padding: 20px; border-bottom: 10px solid #ddd; text-decoration: none; }
+.links a:hover { background: #f1f1f1; }
