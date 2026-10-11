@@ -3,5 +3,9 @@ body{
 margin: auto;
 }
 
-.links a { display: block; padding: 20px; border-bottom: 10px solid #ddd; text-decoration: none; }
+/* .links a { display: block; padding: 20px; border-bottom: 10px solid #ddd; text-decoration: none; }*/
 .links a:hover { background: #f1f1f1; }
+
+.linklist { max-width: 700px; margin-left: 40px; }
+.linklist a { display: block; padding: 10px; border-bottom: 1px solid #ddd; text-decoration: none; }
+.linklist a:hover { background: #f1f1f1; }
